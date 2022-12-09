@@ -1,5 +1,6 @@
 package com.example.twisterkotlin.Activitys
 
+import android.content.Intent
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -33,7 +34,10 @@ class MainActivity : AppCompatActivity() {
                 myPicker =0
 
             }else{
-                Toast.makeText(this,"Toast",Toast.LENGTH_SHORT).show()
+                val intent = Intent(this, OnePlayerActivity::class.java)
+                intent.putExtra("Spielmodie",myPicker)
+                startActivity(intent)
+                finish()
             }
         }
         binding.button2.setOnClickListener {
@@ -46,7 +50,11 @@ class MainActivity : AppCompatActivity() {
                 myPicker =0
 
             }else{
-                Toast.makeText(this,"Toast",Toast.LENGTH_SHORT).show()
+
+                val intent = Intent(this, TwoPlayerActivity::class.java)
+                intent.putExtra("Spielmodie",myPicker)
+                startActivity(intent)
+                finish()
             }
 
         }

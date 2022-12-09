@@ -14,6 +14,9 @@
         android:theme="@style/Theme.TwisterKotlin"
         tools:targetApi="31">
         <activity
+            android:name=".WinnerActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activitys.TwoPlayerActivity"
             android:exported="false" />
         <activity
