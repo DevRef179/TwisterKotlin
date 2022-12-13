@@ -4,8 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/DevRef/AndroidStudioProjects/TwisterKotlin/app/src/main/res/drawable-v24/circle_underbutton.xml" value="0.1" />
+        <entry key="..\:/Users/DevRef/AndroidStudioProjects/TwisterKotlin/app/src/main/res/drawable-v24/circle_underbutton2.xml" value="0.294" />
+        <entry key="..\:/Users/DevRef/AndroidStudioProjects/TwisterKotlin/app/src/main/res/drawable-v24/over_button.xml" value="0.438" />
+        <entry key="..\:/Users/DevRef/AndroidStudioProjects/TwisterKotlin/app/src/main/res/drawable/alert_Btns.xml" value="0.2185" />
+        <entry key="..\:/Users/DevRef/AndroidStudioProjects/TwisterKotlin/app/src/main/res/drawable/circle_under_white.xml" value="0.438" />
+        <entry key="..\:/Users/DevRef/AndroidStudioProjects/TwisterKotlin/app/src/main/res/drawable/circle_underbutton_2.xml" value="0.294" />
+        <entry key="..\:/Users/DevRef/AndroidStudioProjects/TwisterKotlin/app/src/main/res/drawable/menu_buttons.xml" value="0.294" />
         <entry key="..\:/Users/DevRef/AndroidStudioProjects/TwisterKotlin/app/src/main/res/layout/activity_main.xml" value="0.264" />
-        <entry key="..\:/Users/DevRef/AndroidStudioProjects/TwisterKotlin/app/src/main/res/layout/activity_one_player.xml" value="0.14444444444444443" />
+        <entry key="..\:/Users/DevRef/AndroidStudioProjects/TwisterKotlin/app/src/main/res/layout/activity_one_player.xml" value="0.4" />
         <entry key="..\:/Users/DevRef/AndroidStudioProjects/TwisterKotlin/app/src/main/res/layout/activity_two_player.xml" value="0.14444444444444443" />
         <entry key="..\:/Users/DevRef/AndroidStudioProjects/TwisterKotlin/app/src/main/res/layout/activity_winner.xml" value="0.30092592592592593" />
       </map>

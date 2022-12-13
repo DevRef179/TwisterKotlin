@@ -6,7 +6,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".Activitys.TwoPlayerActivity">
+        tools:context=".Activitys.TwoPlayerActivity"
+        android:background="@drawable/background">
 
         <androidx.gridlayout.widget.GridLayout
             android:layout_width="match_parent"
@@ -502,7 +503,7 @@
                     android:layout_marginTop="2.5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="2.5dp"
-                    android:background="@drawable/circle_underbutton2"
+                    android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="1"
                     android:visibility="invisible"
@@ -521,7 +522,7 @@
                     android:layout_marginTop="2.5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="2.5dp"
-                    android:background="@drawable/circle_underbutton2"
+                    android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="2"
                     android:visibility="invisible"
@@ -540,7 +541,7 @@
                     android:layout_marginTop="2.5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="2.5dp"
-                    android:background="@drawable/circle_underbutton2"
+                    android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="3"
 
@@ -560,7 +561,7 @@
                     android:layout_marginTop="2.5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="2.5dp"
-                    android:background="@drawable/circle_underbutton2"
+                    android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="4"
 
@@ -580,7 +581,7 @@
                     android:layout_marginTop="2.5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="2.5dp"
-                    android:background="@drawable/circle_underbutton2"
+                    android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="5"
 
@@ -600,7 +601,7 @@
                     android:layout_marginTop="2.5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="2.5dp"
-                    android:background="@drawable/circle_underbutton2"
+                    android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="6"
 
@@ -620,7 +621,7 @@
                     android:layout_marginTop="2.5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="2.5dp"
-                    android:background="@drawable/circle_underbutton2"
+                    android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="8"
 
@@ -640,7 +641,7 @@
                     android:layout_marginTop="2.5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="2.5dp"
-                    android:background="@drawable/circle_underbutton2"
+                    android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="7"
                     android:visibility="invisible"
@@ -659,7 +660,7 @@
                     android:layout_marginTop="2.5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="2.5dp"
-                    android:background="@drawable/circle_underbutton2"
+                    android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="9"
 
@@ -679,7 +680,7 @@
                     android:layout_marginTop="2.5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="2.5dp"
-                    android:background="@drawable/circle_underbutton2"
+                    android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="10"
                     android:visibility="invisible"
@@ -698,7 +699,7 @@
                     android:layout_marginTop="2.5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="2.5dp"
-                    android:background="@drawable/circle_underbutton2"
+                    android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="11"
 
@@ -718,7 +719,7 @@
                     android:layout_marginTop="2.5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="2.5dp"
-                    android:background="@drawable/circle_underbutton2"
+                    android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="13"
 
@@ -738,7 +739,7 @@
                     android:layout_marginTop="2.5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="2.5dp"
-                    android:background="@drawable/circle_underbutton2"
+                    android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="12"
 
@@ -758,7 +759,7 @@
                     android:layout_marginTop="2.5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="2.5dp"
-                    android:background="@drawable/circle_underbutton2"
+                    android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="14"
 
@@ -778,7 +779,7 @@
                     android:layout_marginTop="2.5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="2.5dp"
-                    android:background="@drawable/circle_underbutton2"
+                    android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="16"
 
@@ -798,7 +799,7 @@
                     android:layout_marginTop="2.5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="2.5dp"
-                    android:background="@drawable/circle_underbutton2"
+                    android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="15"
 
@@ -818,7 +819,7 @@
                     android:layout_marginTop="2.5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="2.5dp"
-                    android:background="@drawable/circle_underbutton2"
+                    android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="17"
 
@@ -838,7 +839,7 @@
                     android:layout_marginTop="2.5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="2.5dp"
-                    android:background="@drawable/circle_underbutton2"
+                    android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="18"
 
@@ -858,7 +859,7 @@
                     android:layout_marginTop="2.5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="2.5dp"
-                    android:background="@drawable/circle_underbutton2"
+                    android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="19"
 
@@ -878,7 +879,7 @@
                     android:layout_marginTop="2.5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="2.5dp"
-                    android:background="@drawable/circle_underbutton2"
+                    android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="20"
 
@@ -898,7 +899,7 @@
                     android:layout_marginTop="2.5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="2.5dp"
-                    android:background="@drawable/circle_underbutton2"
+                    android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="21"
 
@@ -918,7 +919,7 @@
                     android:layout_marginTop="2.5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="2.5dp"
-                    android:background="@drawable/circle_underbutton2"
+                    android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="22"
 
@@ -938,7 +939,7 @@
                     android:layout_marginTop="2.5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="2.5dp"
-                    android:background="@drawable/circle_underbutton2"
+                    android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="23"
                     android:visibility="invisible"
@@ -957,7 +958,7 @@
                     android:layout_marginTop="2.5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="2.5dp"
-                    android:background="@drawable/circle_underbutton2"
+                    android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="24"
                     android:visibility="invisible"
