@@ -21,8 +21,6 @@
             app:rowCount="6"
             tools:ignore="MissingClass">
 
-
-
             <Button
                 android:id="@+id/btn01"
                 android:layout_width="90dp"
@@ -363,10 +361,9 @@
                     android:layout_marginTop="2.5dp"
                     android:layout_marginRight="5dp"
                     android:layout_marginBottom="2.5dp"
-                    android:background="@drawable/btrfly"
+                    android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="1"
-                    android:visibility="invisible"
                     app:layout_column="0"
                     app:layout_columnWeight="1"
                     app:layout_gravity="center"
@@ -385,7 +382,6 @@
                     android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="2"
-                    android:visibility="invisible"
                     app:layout_column="1"
                     app:layout_columnWeight="1"
                     app:layout_gravity="center"
@@ -404,8 +400,6 @@
                     android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="3"
-
-                    android:visibility="invisible"
                     app:layout_column="2"
                     app:layout_columnWeight="1"
                     app:layout_gravity="center"
@@ -424,8 +418,6 @@
                     android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="4"
-
-                    android:visibility="invisible"
                     app:layout_column="3"
                     app:layout_columnWeight="1"
                     app:layout_gravity="center"
@@ -444,8 +436,6 @@
                     android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="5"
-
-                    android:visibility="invisible"
                     app:layout_column="0"
                     app:layout_columnWeight="1"
                     app:layout_gravity="center"
@@ -464,8 +454,6 @@
                     android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="6"
-
-                    android:visibility="invisible"
                     app:layout_column="1"
                     app:layout_columnWeight="1"
                     app:layout_gravity="center"
@@ -484,8 +472,6 @@
                     android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="8"
-
-                    android:visibility="invisible"
                     app:layout_column="3"
                     app:layout_columnWeight="1"
                     app:layout_gravity="center"
@@ -504,7 +490,6 @@
                     android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="7"
-                    android:visibility="invisible"
                     app:layout_column="2"
                     app:layout_columnWeight="1"
                     app:layout_gravity="center"
@@ -523,8 +508,6 @@
                     android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="9"
-
-                    android:visibility="invisible"
                     app:layout_column="0"
                     app:layout_columnWeight="1"
                     app:layout_gravity="center"
@@ -543,7 +526,6 @@
                     android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="10"
-                    android:visibility="invisible"
                     app:layout_column="1"
                     app:layout_columnWeight="1"
                     app:layout_gravity="center"
@@ -562,8 +544,6 @@
                     android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="11"
-
-                    android:visibility="invisible"
                     app:layout_column="2"
                     app:layout_columnWeight="1"
                     app:layout_gravity="center"
@@ -582,8 +562,6 @@
                     android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="13"
-
-                    android:visibility="invisible"
                     app:layout_column="0"
                     app:layout_columnWeight="1"
                     app:layout_gravity="center"
@@ -602,8 +580,6 @@
                     android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="12"
-
-                    android:visibility="invisible"
                     app:layout_column="3"
                     app:layout_columnWeight="1"
                     app:layout_gravity="center"
@@ -622,8 +598,6 @@
                     android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="14"
-
-                    android:visibility="invisible"
                     app:layout_column="1"
                     app:layout_columnWeight="1"
                     app:layout_gravity="center"
@@ -642,8 +616,6 @@
                     android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="16"
-
-                    android:visibility="invisible"
                     app:layout_column="3"
                     app:layout_columnWeight="1"
                     app:layout_gravity="center"
@@ -662,8 +634,6 @@
                     android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="15"
-
-                    android:visibility="invisible"
                     app:layout_column="2"
                     app:layout_columnWeight="1"
                     app:layout_gravity="center"
@@ -682,8 +652,6 @@
                     android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="17"
-
-                    android:visibility="invisible"
                     app:layout_column="0"
                     app:layout_columnWeight="1"
                     app:layout_gravity="center"
@@ -702,7 +670,6 @@
                     android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="18"
-                    android:visibility="invisible"
                     app:layout_column="1"
                     app:layout_columnWeight="1"
                     app:layout_gravity="center"
@@ -721,7 +688,6 @@
                     android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="19"
-                    android:visibility="invisible"
                     app:layout_column="2"
                     app:layout_columnWeight="1"
                     app:layout_gravity="center"
@@ -740,8 +706,6 @@
                     android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="20"
-
-                    android:visibility="invisible"
                     app:layout_column="3"
                     app:layout_columnWeight="1"
                     app:layout_gravity="center"
@@ -760,8 +724,6 @@
                     android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="21"
-
-                    android:visibility="invisible"
                     app:layout_column="0"
                     app:layout_columnWeight="1"
                     app:layout_gravity="center"
@@ -780,8 +742,6 @@
                     android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="22"
-
-                    android:visibility="invisible"
                     app:layout_column="1"
                     app:layout_columnWeight="1"
                     app:layout_gravity="center"
@@ -800,7 +760,6 @@
                     android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="23"
-                    android:visibility="invisible"
                     app:layout_column="2"
                     app:layout_columnWeight="1"
                     app:layout_gravity="center"
@@ -819,7 +778,6 @@
                     android:background="@drawable/over_button"
                     android:onClick="onTouchMethod"
                     android:tag="24"
-                    android:visibility="invisible"
                     app:layout_column="3"
                     app:layout_columnWeight="1"
                     app:layout_gravity="center"

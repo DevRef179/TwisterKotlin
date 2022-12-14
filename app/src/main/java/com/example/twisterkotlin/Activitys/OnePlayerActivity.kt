@@ -22,8 +22,9 @@ import java.util.*
 import java.util.concurrent.TimeUnit
 
 class OnePlayerActivity : AppCompatActivity(), View.OnTouchListener {
-
-    private var counter = 0
+    var clickCount =0
+    private var playerOne = OnePlayer_Class()
+    private var counter = 1
     lateinit var binding: ActivityOnePlayerBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,44 +34,52 @@ class OnePlayerActivity : AppCompatActivity(), View.OnTouchListener {
 
         when (playModus) {
             1 -> {
-                Toast.makeText(this,"Two Fingers", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Two Fingers", Toast.LENGTH_SHORT).show()
             }
             2 -> {
-                Toast.makeText(this,"Three Fingers", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Three Fingers", Toast.LENGTH_SHORT).show()
             }
             3 -> {
-                Toast.makeText(this,"Four Fingers", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Four Fingers", Toast.LENGTH_SHORT).show()
             }
             4 -> {
-                Toast.makeText(this,"Max Fingers", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Max Fingers", Toast.LENGTH_SHORT).show()
             }
             else -> {
                 print("x is neither 1 nor 2")
             }
         }
 
-        startGame()
+
         initButtons()
         transparentUnderButtons()
+        transparentOverButtons()
+        startGame()
 
 
     }
 
-    private fun transparentUnderButtons(){
+    private fun transparentUnderButtons() {
         val buttons = underBtns()
+        for (i in 0 until buttons.size) {
+            buttons[i].setBackgroundColor(Color.parseColor("#00ffffff"))
+        }
+    }
+    private fun transparentOverButtons() {
+        val buttons = overBtnsList()
         for (i in 0 until buttons.size) {
             buttons[i].setBackgroundColor(Color.parseColor("#00ffffff"))
         }
     }
 
 
-
-    private fun startGame(){
+    private fun startGame() {
         var rnd = Random()
-        var nr = rnd.nextInt(23)+1
+        var nr = rnd.nextInt(23) + 1
         var lst = overBtnsList()
-        lst[nr.toInt()].visibility = View.VISIBLE
+        lst[nr.toInt()-1].setBackgroundResource(R.drawable.over_button)
     }
+
 
     @SuppressLint("ClickableViewAccessibility")
     fun initButtons() {
@@ -127,7 +136,7 @@ class OnePlayerActivity : AppCompatActivity(), View.OnTouchListener {
         binding.btn24.visibility = View.VISIBLE
     }
 
-    fun underBtns(): ArrayList<Button>{
+    fun underBtns(): ArrayList<Button> {
         var btns = ArrayList<Button>()
         btns.add(binding.btn01)
         btns.add(binding.btn02)
@@ -157,14 +166,14 @@ class OnePlayerActivity : AppCompatActivity(), View.OnTouchListener {
         return btns
     }
 
-    fun alert(){
+    fun alert() {
         var btns = overBtnsList()
-        for (i in 0..23){
+        for (i in 0..23) {
             btns[i].setBackgroundResource(R.drawable.alert_btns)
         }
     }
 
-    fun overBtnsList():ArrayList<Button>{
+    fun overBtnsList(): ArrayList<Button> {
 
         var btns = ArrayList<Button>()
         btns.add(binding.btn1)
@@ -197,7 +206,6 @@ class OnePlayerActivity : AppCompatActivity(), View.OnTouchListener {
     @SuppressLint("ClickableViewAccessibility")
     override fun onTouch(v: View, event: MotionEvent): Boolean {
 
-        var oneP = OnePlayer_Class()
         var lstButtons = overBtnsList()
         var lst = underBtns()
         var pDownX = 0
@@ -210,19 +218,23 @@ class OnePlayerActivity : AppCompatActivity(), View.OnTouchListener {
 
             MotionEvent.ACTION_DOWN -> {
                 lst[nr.toInt() - 1].setBackgroundResource(R.drawable.circle_underbutton)
-                var nextBtn= oneP.getRandom(nr.toInt())
-                lstButtons[nextBtn].visibility = View.VISIBLE
-
+                lstButtons[playerOne.newRand()].setBackgroundResource(R.drawable.over_button)
+                playerOne.add(nr.toInt()-1)
+                playerOne.playerOnePoints +=1
                 counter++
+                clickCount ++
+                //Toast.makeText(this, "Gewonnen ${clickCount}",Toast.LENGTH_SHORT).show()
 
-                if (counter % 2 == 0) {
-                    lst[nr.toInt() - 1].setBackgroundResource(R.drawable.circle_underbutton)
-                    //lst[nr.toInt()-1].setBackgroundColor(Color.parseColor("#FFD500F9"))
-                } else if (counter % 2 == 1) {
 
-                } else {
+                if (playerOne.playerOnePoints == 500){
+                    Toast.makeText(this, "Gewonnen ${playerOne.playerOnePoints}",Toast.LENGTH_SHORT).show()
 
+                    val intent = Intent(this, MainActivity::class.java)
+                    startActivity(intent)
+                    finish()
                 }
+
+
             }
             MotionEvent.ACTION_MOVE -> {
                 pDownX = event.x.toInt()
@@ -233,10 +245,23 @@ class OnePlayerActivity : AppCompatActivity(), View.OnTouchListener {
                 }
             }
             MotionEvent.ACTION_UP -> {
-               nr.toInt()
-                //Toast.makeText(this,"BtnNr: Losgelassen ${nr.toInt()}",Toast.LENGTH_SHORT).show()
-                lstButtons[nr.toInt()-1].visibility = View.INVISIBLE
-                lst[nr.toInt()-1].visibility = View.INVISIBLE
+
+                if (playerOne.playerOnePoints < 200){
+                    Toast.makeText(this, "Verloren ${playerOne.playerOnePoints}",Toast.LENGTH_SHORT).show()
+
+                    val intent = Intent(this, MainActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                }
+
+
+
+                nr.toInt()
+                playerOne.removeBtn(counter)
+                counter --
+                playerOne.playerOnePoints -= 1
+                lstButtons[nr.toInt() - 1].setBackgroundResource(R.drawable.over_button_transparent)
+                lst[nr.toInt() - 1].setBackgroundResource(R.drawable.circle_underbutton_transparent)
             }
             MotionEvent.ACTION_CANCEL -> {
             }
